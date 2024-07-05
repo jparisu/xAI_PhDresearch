@@ -1,1 +1,15 @@
-/.quarto/
+# Quarto rendering remaining files
+# Folders finished in _files
+*_files/
+
+# Build folder
+*build/
+
+# Result files
+*.pdf
+*.html
+!code.html
+
+# Other gitignore files
+!.gitignore
+*.gitignore
