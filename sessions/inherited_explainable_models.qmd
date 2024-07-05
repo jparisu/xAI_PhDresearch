@@ -32,7 +32,7 @@ format:
 
 ## { .exclude-from-toc }
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Linear_regression.svg/1024px-Linear_regression.svg.png)
+![](images/1024px-Linear_regression.svg.png)
 
 
 ## Interpretación de los coeficientes en atributos numéricos
@@ -90,7 +90,7 @@ Para eso se pueden usar ténicas de regularización como **LASSO**.
 
 ## { .exclude-from-toc }
 
-![](https://cdn.prod.website-files.com/614f85eb41a4a6f349a3a145/641820301461c614b1603f38_4-NumericFeatures.png)
+![](images/641820301461c614b1603f38_4-NumericFeatures.png)
 
 ## GLM (Generalized Linear Models)
 
@@ -144,7 +144,7 @@ Normalmente se usan *splines* para ajustar funciones no lineales a los atributos
 
 ## { .exclude-from-toc }
 
-![](https://christophm.github.io/interpretable-ml-book/images/tree-artificial-1.jpeg)
+![](images/tree-artificial-1.jpeg)
 
 ## Interpretación de los nodos
 
@@ -180,7 +180,7 @@ Los árboles de decisión se interpretan por la decisión en cada nodo, y la imp
 
 ## { .exclude-from-toc }
 
-![](https://media.geeksforgeeks.org/wp-content/uploads/20200402041013/Rule-Generation.png)
+![](images/Rule-Generation.png)
 
 ## Reglas de decisión
 
@@ -224,7 +224,7 @@ Cada reglar se puede medir principalmente con 2 valores, que suelen ser inversam
 
 ## { .exclude-from-toc }
 
-![](https://christophm.github.io/interpretable-ml-book/images/rulefit.jpg)
+![](images/rulefit.jpg)
 
 
 ## Implementación

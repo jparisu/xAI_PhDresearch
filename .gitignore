@@ -8,6 +8,8 @@
 # Result files
 *.pdf
 *.html
+!code.html
 
 # Other gitignore files
 !.gitignore
+*.gitignore
