@@ -1,9 +1,12 @@
-name: Render and Deploy Quarto
+name: Render Quarto files and upload
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
-      - main  # or the branch you prefer
+      - main
 
 jobs:
   build-deploy:
@@ -34,4 +37,5 @@ jobs:
     - name: Store the result as artifact
       uses: actions/upload-artifact@v2
       with:
-        name: _build
+        name: BasicConcepts_build
+        path: _build
