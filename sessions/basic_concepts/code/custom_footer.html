@@ -1,0 +1,19 @@
+<script type="text/javascript" charset="utf-8">
+    function add_custom_footer() {
+      let title = document.title;
+      // let author = document.getElementsByTagName("meta")["author"].content;
+      let subtitle = document.getElementsByClassName("subtitle")[0].textContent;
+
+      let title_slide = document.querySelector("section#title-slide");
+
+      let title_slide_footer = title + " - " + subtitle;
+      let footer = document.querySelector('div.footer p');
+      let global_footer_text = footer.innerHTML;
+
+      footer.innerHTML = title_slide_footer;
+    };
+
+    window.addEventListener("load", (event) => {
+      add_custom_footer();
+    });
+</script>

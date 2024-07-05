@@ -1,0 +1,187 @@
+---
+title: "PhD xAI"
+subtitle: "Sesión 1: Conceptos básicos sobre explicabilidad (Molnar)"
+author: "Javier París"
+logo: images/uam.png
+
+toc: true
+toc-depth: 2
+
+theme: serif
+
+format:
+    revealjs:
+
+        footer: "."
+        css: style/style.css
+
+        progress: true
+        slide-number: true
+        transition: slide
+
+        navigation-mode: vertical
+        controls-layout: bottom-right
+        controls-tutorial: true
+        controls: true
+        touch: true
+
+        include-after-body: code/custom_footer.html
+---
+
+# Interpretabilidad
+
+## ¿Qué es la interpretabilidad?
+
+**Es un grado, no una propiedad binaria.**
+
+- El nivel con el que un humano puede entender las causas de una decisión.
+- El nivel con el que un humano puede predecir el resultado de un modelo.
+
+
+## ¿Qué es la explicación?
+
+Es una respuesta a una pregunta del tipo:
+
+- "why" question
+- "what if" question
+
+## Importancia (por qué no confiar en un modelo)
+
+- **Seguridad**: poder confiar en aplicaciones críticas
+- **Sesgos**: detectar y corregir sesgos
+- **Conocimiento**: el objetivo de la ciencia es el entendimiento
+- **Aceptación**: para ser humana/socialmente aceptable
+
+
+## Objetivo de la interpretabilidad
+
+- Equidad - *Fairness*
+- Privacidad - *Privacy*
+- Fiablididad - *Reliability*
+- Causalidad - *Causality*
+- Confianza - *Trust*
+
+
+## Diferencia entre modelo y método
+
+::: {.columns}
+::: {.column width="50%"}
+**Modelo**
+
+Algoritmo que ajusta una función a los datos de entrenamiento.
+
+- KNN
+- SVM
+- ANN
+:::
+::: {.column width="50%"}
+**Método**
+
+Algoritmo para obtener explicaciones de modelos ya entrenados.
+
+- LIME
+- SHAP
+- Counterfactuals
+:::
+:::
+
+
+# Taxonomía
+
+## Según el modelo
+
+- **Modelos intrínsecamente interpretables**: modelos que son interpretables por sí mismos.
+  - Modelos lineales
+  - Modelos basados en reglas
+- **Post-hoc** métodos sobre modelos ya entrenados
+  - LIME
+  - SHAP
+
+## Resultados de los métodos de interpretación
+
+- Resumen estadístico de atributos
+- Resumen visual de atributos
+- Explicaciones internas del modelo
+- Explicación mediante datos individuales
+- Aproximación mediante modelos interpretables
+
+
+## Según el método
+
+- Métodos agnósticos de modelo: LIME
+- Métodos específicos: ANN
+
+
+## Según el rango de interpretación
+
+- **Local**: interpretación de una predicción (un dato)
+- **Global**: interpretación del modelo completo
+
+
+## Rango de la interpretabilidad
+
+- **Transparencia**: ¿Cómo el algoritmo crea el modelo?
+- **Global**:
+  - **Holístico**: ¿Cómo se lleva a cabo la inferencia?
+  - **Modular**: ¿Qué parte del modelo afecta a qué en la inferencia?
+- **Local**:
+  - **Individual**: ¿Por qué un modelo predice una salida concreta para una entrada?
+  - **Grupal** ¿Por qué un modelo predice una salida similar para un grupo de entradas?
+
+
+# Propiedades de las explicaciones
+
+## Propiedades de los métodos
+
+- **Expresividad**: estructura de la explicación
+- **Transparencia**: cuánto necesita saber la explicación del interior del modelo
+- **Portabilidad**: rango de modelos a los que se puede aplicar
+- **Complejidad**: computacional
+
+
+## Propiedades de las explicaciones individuales
+
+- **Precisión**: cómo de bien la explicación predice datos desconocidos
+- **Fidelidad**: cómo de bien la explicación aproxima la predicción del modelo
+- **Consistencia**: si la explicación difiere entre modelos similares
+- **Estabilidad**: si la explicación cambia poco al cambiar la entrada
+- **Comprensibilidad**: si la explicación es fácil de entender
+- **Certeza**: si la explicación es recoge la incertidumbre del modelo
+- **Importancia**: si la explicación recoge la importancia de los atributos
+- **Novedad**: si el método es capaz de explicar datos alejados del conjunto de entrenamiento
+- **Representatividad**: cuántos datos cubre una explicación
+
+
+# Medida de la interpretabilidad {.novel-slide-title}
+
+## Puntos de análisis {.novel-slide}
+
+- Entrenamiento
+  - Memoria
+  - Proceso algorítmico - optimización
+  - Aprendizaje gradual del modelo
+- Inferencia
+  - Proceso algorítmico - toma de decisiones
+  - Modelo aprendido - pesos, frontera, etc.
+
+## Medidas subjetivas {.novel-slide}
+
+- **Transparencia**:
+  - **Modularidad**: diferenciación de partes del modelo
+  - **Simulabilidad**: capacidad de un humano para simularlo
+- **Parsimonia**:
+  - **Parámetros**: número de parámetros
+  - **Estructura**: modelo estructural
+
+## Medidas objetivas {.novel-slide}
+
+- **Algorítmicas**:
+  - **Complejidad algorítmica**: tiempo y espacio $O(f(n))$
+  - **Complejidad ciclomática**: número de caminos independientes
+  - **Número de decisiones**: reducción del problema a un sistema basado en reglas
+- **Locales**:
+  - **Fidelidad**: si la explicación se ajusta al modelo (es capaz de explicar datos contrafácticos)
+  - **Consistencia**: si la explicación difiere entre modelos similares
+  - **Monotoneidad**: si la explicación cambia de forma monótona con los datos
+- **Globales**:
+  - **Importancia de atributos**: medir la importancia de cada atributo, o de relaciones entre ellos

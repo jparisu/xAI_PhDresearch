@@ -1,0 +1,35 @@
+name: Render and Deploy Quarto
+
+on:
+  push:
+    branches:
+      - main  # or the branch you prefer
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # Download the repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Install Quarto
+    - name: Setup Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+
+    # Render Quarto files
+    - name: Render Quarto files
+      run: |
+        quarto render sessions/basic_concepts --to revealjs,pdf --output-dir $(pwd)/_build
+      # uses: quarto-dev/quarto-actions/render@v2
+      # with:
+      #   to: revealjs, pdf
+      #   path: sessions/basic_concepts
+
+    # Store the result as artifact
+    - name: Store the result as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: _build

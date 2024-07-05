@@ -1,0 +1,46 @@
+
+.reveal .slides .novel-slide-title {
+    font-size: 1.9em;  /* Adjust as needed for larger font */
+    background-color: #a6ffa6;  /* Example background color */
+    color: #cccccc;  /* Example text color */
+    /* Add more styling as needed */
+    text-align: center;  /* Centered text for title slides */
+}
+
+.reveal .slides > section {
+    overflow-y: auto;
+    font-size: 20pt;
+    font-family: 'Georgia', serif;
+}
+
+/* Title slide specific styles */
+.reveal .slides > section:first-of-type {
+    font-size: 1.5em;  /* Adjust as needed for larger font */
+}
+
+/* Title slide specific styles */
+.reveal .title-slide {
+    font-size: 1.9em;  /* Adjust as needed for larger font */
+    background-color: #b7b7b7;  /* Example background color */
+    color: #482300;  /* Example text color */
+    /* Add more styling as needed */
+    text-align: center;  /* Centered text for title slides */
+}
+
+.bottom-paragraph {
+    position: absolute;
+    bottom: 50px; /* Adjust as needed */
+    width: 100%;
+    color: #444;
+}
+
+.reveal .slides img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.novel-slide {
+    background-color: #a4ff92;  /* Example background color */
+    color: #000000;  /* Example text color */
+}
