@@ -18,6 +18,8 @@ jobs:
     # Install Quarto
     - name: Setup Quarto
       uses: quarto-dev/quarto-actions/setup@v2
+      with:
+        tinytex: true
 
     # Render Quarto files
     - name: Render Quarto files
