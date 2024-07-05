@@ -2,7 +2,7 @@
 title: "PhD xAI"
 subtitle: "Sesión 1: Conceptos básicos sobre explicabilidad (Molnar)"
 author: "Javier París"
-logo: images/uam.png
+logo: ../templates/images/uam.png
 
 toc: true
 toc-depth: 2
@@ -11,9 +11,6 @@ theme: serif
 
 format:
     revealjs:
-
-        footer: "."
-        css: style/style.css
 
         progress: true
         slide-number: true
@@ -25,7 +22,9 @@ format:
         controls: true
         touch: true
 
-        include-after-body: code/custom_footer.html
+        footer: "."
+        css: ../templates/style/style.css
+        include-after-body: ../templates/code/custom_footer.html
 ---
 
 # Interpretabilidad

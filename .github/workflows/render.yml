@@ -7,9 +7,18 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      files_to_render:
+        description: 'Files paths to render'
+        required: false
+        default: ''
+
+env:
+  files_to_render: ""
 
 jobs:
-  build-deploy:
+  build-upload:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,18 +33,29 @@ jobs:
       with:
         tinytex: true
 
+    # Set env var if not set with all .qmd files
+    - name: Set files_to_render
+      run: |
+        if [ -z "${{ github.event.inputs.files_to_render }}" ]; then
+          files=$(find . -name "*.qmd" | tr '\n' ' ')
+          echo "files_to_render=$(echo $files)" >> $GITHUB_ENV
+        else
+          echo "files_to_render=$(echo ${{ github.event.input.files_to_render }})" >> $GITHUB_ENV
+        fi
+
+    # Echo files to render paths [debug]
+    - name: Echo files to render paths
+      run: |
+        echo "Files to render: ${{ env.files_to_render }}"
+
     # Render Quarto files
     - name: Render Quarto files
       run: |
-        quarto render sessions/basic_concepts --to revealjs,pdf --output-dir $(pwd)/_build
-      # uses: quarto-dev/quarto-actions/render@v2
-      # with:
-      #   to: revealjs, pdf
-      #   path: sessions/basic_concepts
+        quarto render ${{ env.files_to_render }} --to revealjs,pdf --output-dir ${{ github.workspace }}/_build
 
     # Store the result as artifact
     - name: Store the result as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
-        name: BasicConcepts_build
-        path: _build
+        name: QuartoRenderResults
+        path: ${{ github.workspace }}/_build
