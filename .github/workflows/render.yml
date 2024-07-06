@@ -13,9 +13,11 @@ on:
         description: 'Files paths to render'
         required: false
         default: ''
-
-env:
-  files_to_render: ""
+      # Check https://quarto.org/docs/output-formats/all-formats.html for all available formats
+      export_format:
+        description: 'Formats to export the rendered files to: [revealjs,pdf,html,docx,beamer,ipynb,etc.]'
+        required: false
+        default: 'revealjs,pdf'
 
 jobs:
   build-upload:
@@ -51,7 +53,7 @@ jobs:
     # Render Quarto files
     - name: Render Quarto files
       run: |
-        quarto render ${{ env.files_to_render }} --to revealjs,pdf --output-dir ${{ github.workspace }}/_build
+        quarto render ${{ env.files_to_render }} --to ${{ github.event.input.export_format }} --output-dir ${{ github.workspace }}/_build
 
     # Store the result as artifact
     - name: Store the result as artifact
