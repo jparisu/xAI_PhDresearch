@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.1 ¿Qué es la interpretabilidad?",
+    "text": "1.1 ¿Qué es la interpretabilidad?\nEs un grado, no una propiedad binaria.\n\nEl nivel con el que un humano puede entender las causas de una decisión.\nEl nivel con el que un humano puede predecir el resultado de un modelo."
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#qué-es-la-explicación",
+    "href": "sessions/basic_concepts.html#qué-es-la-explicación",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.2 ¿Qué es la explicación?",
+    "text": "1.2 ¿Qué es la explicación?\nEs una respuesta a una pregunta del tipo:\n\n“why” question\n“what if” question"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
+    "href": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.3 Importancia (por qué no confiar en un modelo)",
+    "text": "1.3 Importancia (por qué no confiar en un modelo)\n\nSeguridad: poder confiar en aplicaciones críticas\nSesgos: detectar y corregir sesgos\nConocimiento: el objetivo de la ciencia es el entendimiento\nAceptación: para ser humana/socialmente aceptable"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.4 Objetivo de la interpretabilidad",
+    "text": "1.4 Objetivo de la interpretabilidad\n\nEquidad - Fairness\nPrivacidad - Privacy\nFiablididad - Reliability\nCausalidad - Causality\nConfianza - Trust"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
+    "href": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.5 Diferencia entre modelo y método",
+    "text": "1.5 Diferencia entre modelo y método\n\n\nModelo\nAlgoritmo que ajusta una función a los datos de entrenamiento.\n\nKNN\nSVM\nANN\n\n\nMétodo\nAlgoritmo para obtener explicaciones de modelos ya entrenados.\n\nLIME\nSHAP\nCounterfactuals"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-modelo",
+    "href": "sessions/basic_concepts.html#según-el-modelo",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.1 Según el modelo",
+    "text": "2.1 Según el modelo\n\nModelos intrínsecamente interpretables: modelos que son interpretables por sí mismos.\n\nModelos lineales\nModelos basados en reglas\n\nPost-hoc métodos sobre modelos ya entrenados\n\nLIME\nSHAP"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
+    "href": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.2 Resultados de los métodos de interpretación",
+    "text": "2.2 Resultados de los métodos de interpretación\n\nResumen estadístico de atributos\nResumen visual de atributos\nExplicaciones internas del modelo\nExplicación mediante datos individuales\nAproximación mediante modelos interpretables"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-método",
+    "href": "sessions/basic_concepts.html#según-el-método",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.3 Según el método",
+    "text": "2.3 Según el método\n\nMétodos agnósticos de modelo: LIME\nMétodos específicos: ANN"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
+    "href": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.4 Según el rango de interpretación",
+    "text": "2.4 Según el rango de interpretación\n\nLocal: interpretación de una predicción (un dato)\nGlobal: interpretación del modelo completo"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.5 Rango de la interpretabilidad",
+    "text": "2.5 Rango de la interpretabilidad\n\nTransparencia: ¿Cómo el algoritmo crea el modelo?\nGlobal:\n\nHolístico: ¿Cómo se lleva a cabo la inferencia?\nModular: ¿Qué parte del modelo afecta a qué en la inferencia?\n\nLocal:\n\nIndividual: ¿Por qué un modelo predice una salida concreta para una entrada?\nGrupal ¿Por qué un modelo predice una salida similar para un grupo de entradas?"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#propiedades-de-los-métodos",
+    "href": "sessions/basic_concepts.html#propiedades-de-los-métodos",
+    "title": "Revisión del libro de Molnar",
+    "section": "3.1 Propiedades de los métodos",
+    "text": "3.1 Propiedades de los métodos\n\nExpresividad: estructura de la explicación\nTransparencia: cuánto necesita saber la explicación del interior del modelo\nPortabilidad: rango de modelos a los que se puede aplicar\nComplejidad: computacional"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
+    "href": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
+    "title": "Revisión del libro de Molnar",
+    "section": "3.2 Propiedades de las explicaciones individuales",
+    "text": "3.2 Propiedades de las explicaciones individuales\n\nPrecisión: cómo de bien la explicación predice datos desconocidos\nFidelidad: cómo de bien la explicación aproxima la predicción del modelo\nConsistencia: si la explicación difiere entre modelos similares\nEstabilidad: si la explicación cambia poco al cambiar la entrada\nComprensibilidad: si la explicación es fácil de entender\nCerteza: si la explicación es recoge la incertidumbre del modelo\nImportancia: si la explicación recoge la importancia de los atributos\nNovedad: si el método es capaz de explicar datos alejados del conjunto de entrenamiento\nRepresentatividad: cuántos datos cubre una explicación"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#puntos-de-análisis",
+    "href": "sessions/basic_concepts.html#puntos-de-análisis",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.1 Puntos de análisis",
+    "text": "4.1 Puntos de análisis\n\nEntrenamiento\n\nMemoria\nProceso algorítmico - optimización\nAprendizaje gradual del modelo\n\nInferencia\n\nProceso algorítmico - toma de decisiones\nModelo aprendido - pesos, frontera, etc."
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#medidas-subjetivas",
+    "href": "sessions/basic_concepts.html#medidas-subjetivas",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.2 Medidas subjetivas",
+    "text": "4.2 Medidas subjetivas\n\nTransparencia:\n\nModularidad: diferenciación de partes del modelo\nSimulabilidad: capacidad de un humano para simularlo\n\nParsimonia:\n\nParámetros: número de parámetros\nEstructura: modelo estructural"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#medidas-objetivas",
+    "href": "sessions/basic_concepts.html#medidas-objetivas",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.3 Medidas objetivas",
+    "text": "4.3 Medidas objetivas\n\nAlgorítmicas:\n\nComplejidad algorítmica: tiempo y espacio \\(O(f(n))\\)\nComplejidad ciclomática: número de caminos independientes\nNúmero de decisiones: reducción del problema a un sistema basado en reglas\n\nLocales:\n\nFidelidad: si la explicación se ajusta al modelo (es capaz de explicar datos contrafácticos)\nConsistencia: si la explicación difiere entre modelos similares\nMonotoneidad: si la explicación cambia de forma monótona con los datos\n\nGlobales:\n\nImportancia de atributos: medir la importancia de cada atributo, o de relaciones entre ellos\n\n\n\n\n\n\nPhD xAI"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#section",
+    "href": "sessions/inherited_explainable_models.html#section",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.1 ",
+    "text": "1.1"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#interpretación-de-los-coeficientes-en-atributos-numéricos",
+    "href": "sessions/inherited_explainable_models.html#interpretación-de-los-coeficientes-en-atributos-numéricos",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.2 Interpretación de los coeficientes en atributos numéricos",
+    "text": "1.2 Interpretación de los coeficientes en atributos numéricos\nDada la ecuación lineal a ajustar por el modelo:\n\\(y = \\omega_0 + \\omega_1 x_1 + \\omega_2 x_2 + \\ldots + \\omega_n x_n\\)\nSe puede interpretar cada uno de los coeficientes \\(\\omega_i\\) como: manteniendo todos los demás factores constantes, un incremento de una unidad en \\(x_i\\) se asocia con un incremento de \\(\\omega_i\\) en \\(y\\)."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#interpretación-según-atributo",
+    "href": "sessions/inherited_explainable_models.html#interpretación-según-atributo",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.3 Interpretación según atributo",
+    "text": "1.3 Interpretación según atributo\n\nAtributos numéricos: incremento en \\(\\omega_i\\) por incremento en una unidad en \\(x\\).\nAtributos categóricos: incremento en \\(\\omega_i\\) por comparación con la categoría base.\n\\(\\omega_0\\): valor esperado de \\(y\\) con todos los demás atributos como valor base \\((x=0)\\). Con todos los atributos normalizados, este valor pasa a ser el valor esperado para el dato promedio."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#feature-importance",
+    "href": "sessions/inherited_explainable_models.html#feature-importance",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.4 Feature importance",
+    "text": "1.4 Feature importance\nEl valor de cada coeficiente está intrínsecamente relacionada con la importancia de cada atributo, pero también es altamente dependiente de la variación de dicho atributo. Por eso es importante normalizar los atributos para poder comparar los coeficientes entre sí.\nAdemás, la correlación entre atributos puede hacer que los coeficientes no tengan sentido. Para eso se pueden usar ténicas de regularización como LASSO."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#pros-cons",
+    "href": "sessions/inherited_explainable_models.html#pros-cons",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.5 Pros / Cons",
+    "text": "1.5 Pros / Cons\n\n\n1.5.1 Ventajas\n\nInterpretación directa de los coeficientes. No hay caja negra.\nAmpliamente aceptado y utilizado.\nGarantía de encontrar el modelo óptimo (algebraicamente).\n\n\n1.5.2 Desventajas\n\nNo puede ajustar funciones no lineales.\nNo modela relación entre atributos.\n\nAtributos muy correlacionados pueden dar a coeficientes sin sentido (infinitas soluciones del sistema de ecuaciones)."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#conclusiones",
+    "href": "sessions/inherited_explainable_models.html#conclusiones",
+    "title": "Revisión del libro de Molnar",
+    "section": "1.6 Conclusiones",
+    "text": "1.6 Conclusiones\n\nEs un modelo fácilmente interpretable localmente. Es estrictamente monótono.\nPara poder ver la importancia de los atributos, es necesario normalizarlos y usar regularización."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#section-1",
+    "href": "sessions/inherited_explainable_models.html#section-1",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.1 ",
+    "text": "2.1"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#glm-generalized-linear-models",
+    "href": "sessions/inherited_explainable_models.html#glm-generalized-linear-models",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.2 GLM (Generalized Linear Models)",
+    "text": "2.2 GLM (Generalized Linear Models)\nEste tipo de modelos se basa en una regresión lineal ajustando la regresión a una distribución de probabilidad no gaussiana, y aplicándole una función de enlace.\n\\(g(E(y|x)) = \\omega_0 + \\omega_1 x_1 + \\omega_2 x_2 + \\ldots + \\omega_n x_n\\)\n\nEl caso de la regresión logística es un caso particular de GLM donde \\(g=ln\\) y la distribución es binomial."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#interpretación-glm",
+    "href": "sessions/inherited_explainable_models.html#interpretación-glm",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.3 Interpretación GLM",
+    "text": "2.3 Interpretación GLM\nLa interpretación de los coeficientes depende de la función de enlace:\n\nIdentidad: Los coeficientes siguen interpretándose como la suma\nLogarítmica: Los coeficientes pasan a ser multiplicativos (como en la regresión logística)\nOtras: depende de la función de enlace, y en muchos casos no tienen interpretación directa."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#gam-generalized-additive-models",
+    "href": "sessions/inherited_explainable_models.html#gam-generalized-additive-models",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.4 GAM (Generalized Additive Models)",
+    "text": "2.4 GAM (Generalized Additive Models)\nLos GAM son una extensión de los GLM que permiten ajustar funciones no lineales a los atributos.\n\\(g(E(y|x)) = \\omega_0 + f_1(x_1) + f_2(x_2) + \\ldots + f_n(x_n)\\)\nNormalmente se usan splines para ajustar funciones no lineales a los atributos."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#pros-cons-1",
+    "href": "sessions/inherited_explainable_models.html#pros-cons-1",
+    "title": "Revisión del libro de Molnar",
+    "section": "2.5 Pros / Cons",
+    "text": "2.5 Pros / Cons\n\n\n2.5.1 Ventajas\n\nSe pueden ajustar gran cantidad de funciones no lineales.\nÁun mantienen parte de la interpretabilidad de los modelos lineales.\n\n\n2.5.2 Desventajas\n\nEstos modelos son difíciles de pre-ajustar y son altamente dependientes de los datos.\nSon menos interpretables.\nAsumen ciertas características de los datos."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#section-2",
+    "href": "sessions/inherited_explainable_models.html#section-2",
+    "title": "Revisión del libro de Molnar",
+    "section": "3.1 ",
+    "text": "3.1"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#interpretación-de-los-nodos",
+    "href": "sessions/inherited_explainable_models.html#interpretación-de-los-nodos",
+    "title": "Revisión del libro de Molnar",
+    "section": "3.2 Interpretación de los nodos",
+    "text": "3.2 Interpretación de los nodos\nUn árbol de decisión se puede interpretar como una división del espacio de atributos en subconjuntos, donde cada subconjunto se asocia con un nodo hoja.\n\\(y = \\sum_{a=1}^A c_a I(x \\in R_i)\\)\nLos árboles de decisión se interpretan por la decisión en cada nodo, y la importancia de cada atributo se mide por la cantidad de veces que se usa en el árbol."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#pros-cons-2",
+    "href": "sessions/inherited_explainable_models.html#pros-cons-2",
+    "title": "Revisión del libro de Molnar",
+    "section": "3.3 Pros / Cons",
+    "text": "3.3 Pros / Cons\n\n\n3.3.1 Ventajas\n\nEs capaz de modelar funciones no lineales y relaciones entre atributos.\nTiene una visualización directa y sencilla.\nEs fácilmente interpretable debido a su naturaleza de explicar las decisiones como “what if”.\n\n\n3.3.2 Desventajas\n\nNo son capaces de modelar relaciones lineales.\n\nUn mismo cambio en un dato puede hacer que la predicción no cambie o que cambie drásticamente.\n\nSon altamente inestables. Dependen altamente del dataset y de la decisión de qué atributos elegir en qué orden.\nEl número de nodos final aumenta exponencialmente con la profundidad del árbol."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#section-3",
+    "href": "sessions/inherited_explainable_models.html#section-3",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.1 ",
+    "text": "4.1"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#reglas-de-decisión",
+    "href": "sessions/inherited_explainable_models.html#reglas-de-decisión",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.2 Reglas de decisión",
+    "text": "4.2 Reglas de decisión\n\\(IF(cond[\\And]) \\rightarrow THEN(class)\\)\nLas reglas de estos modelos son altamente interpretables ya que se asemejan al lenguaje natural.\nCada reglar se puede medir principalmente con 2 valores, que suelen ser inversamente proporcionales:\n\nSoporte/Cobertura: cuántas veces se cumple la regla.\nPrecisión: cuántas veces la regla acierta."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#pros-cons-3",
+    "href": "sessions/inherited_explainable_models.html#pros-cons-3",
+    "title": "Revisión del libro de Molnar",
+    "section": "4.3 Pros / Cons",
+    "text": "4.3 Pros / Cons\n\n\n4.3.1 Ventajas\n\nSon altamente interpretables.\nSon muy similares a los árboles, aunque en general más compactos.\nSon robustos (no inestables) frente a cambios en los datos o outliers.\nSolo utilizan los atributos relevantes.\n\n\n4.3.2 Desventajas\n\nNo sirven para problemas de regresión\nEn muchos casos por el método o por motivos de complejidad, los atributos deben ser categóricos\nNo son capaces de modelar relaciones lineales.\nEn muchos casos se da overfitting."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#section-4",
+    "href": "sessions/inherited_explainable_models.html#section-4",
+    "title": "Revisión del libro de Molnar",
+    "section": "5.1 ",
+    "text": "5.1"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#implementación",
+    "href": "sessions/inherited_explainable_models.html#implementación",
+    "title": "Revisión del libro de Molnar",
+    "section": "5.2 Implementación",
+    "text": "5.2 Implementación\nModelo que ajusta nodos hoja de un árbol de decisión como atributos de un modelo lineal.\n\nSe generan reglas a partir de un árbol de decisión.\nCada nodo hoja se interpreta como un atributo binario.\nSe añaden los atributos numéricos originales.\nSe entrena un modelo lineal con estos atributos utilizando regularización LASSO."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#interpretación",
+    "href": "sessions/inherited_explainable_models.html#interpretación",
+    "title": "Revisión del libro de Molnar",
+    "section": "5.3 Interpretación",
+    "text": "5.3 Interpretación\nLa importancia de cada atributo se mide como en un modelo lineal:\n\nAtributos numéricos: incremento en \\(\\omega_i\\) por incremento en una unidad en \\(x\\).\nReglas: incremento en \\(\\omega_i\\) si se cumple la regla."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#pros-cons-4",
+    "href": "sessions/inherited_explainable_models.html#pros-cons-4",
+    "title": "Revisión del libro de Molnar",
+    "section": "5.4 Pros / Cons",
+    "text": "5.4 Pros / Cons\n\n\n5.4.1 Ventajas\n\nTodas las ventajas del modelo lineal\nAñade las interacciones entre atributos al modelo\nEs fácil localmente interpretable, ya que las reglas suelen aplicar a regiones pequeñas\n\n\n5.4.2 Desventajas\n\nPuede generar muchas reglas que hagan el modelo demasiado complejo\nLa interpretación sigue fallando en el mismo caso que la lineal: solo es interpretable si el resto de atributos son constantes"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#naive-bayes",
+    "href": "sessions/inherited_explainable_models.html#naive-bayes",
+    "title": "Revisión del libro de Molnar",
+    "section": "6.1 Naive Bayes",
+    "text": "6.1 Naive Bayes\n\\(P(C_k|x) = \\frac{P(x|C_k)P(C_k)}{P(x)}\\)\nEs fácilmente interpretable la importancia de cada atributo \\(P(x|C_k)\\)."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#knn",
+    "href": "sessions/inherited_explainable_models.html#knn",
+    "title": "Revisión del libro de Molnar",
+    "section": "6.2 KNN",
+    "text": "6.2 KNN\nAl ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.\nEl modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos.\n\n\n\n\nPhD xAI"
+  }
+]
