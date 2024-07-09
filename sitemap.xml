@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jparisu.github.io/xAI_PhDresearch/sessions/basic_concepts.html</loc>
-    <lastmod>2024-07-09T16:25:26.311Z</lastmod>
-  </url>
-  <url>
     <loc>https://jparisu.github.io/xAI_PhDresearch/index.html</loc>
-    <lastmod>2024-07-09T17:21:55.528Z</lastmod>
+    <lastmod>2024-07-09T17:56:30.571Z</lastmod>
   </url>
   <url>
     <loc>https://jparisu.github.io/xAI_PhDresearch/sessions/inherited_explainable_models.html</loc>
-    <lastmod>2024-07-09T16:50:12.328Z</lastmod>
+    <lastmod>2024-07-09T17:56:30.575Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jparisu.github.io/xAI_PhDresearch/sessions/basic_concepts.html</loc>
+    <lastmod>2024-07-09T17:56:30.575Z</lastmod>
   </url>
 </urlset>
