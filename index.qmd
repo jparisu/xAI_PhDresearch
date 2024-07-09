@@ -8,3 +8,5 @@ listing:
 ---
 
 # xAI PhD Sessions
+
+![](templates/images/placeholder.png){width=0%}
