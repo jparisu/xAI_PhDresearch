@@ -4,7 +4,112 @@
     "href": "index.html",
     "title": "Index",
     "section": "",
-    "text": "xAI PhD Sessions\n\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar 1\n\n\nConceptos básicos sobre explicabilidad\n\n\n\nJavier París\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar 2\n\n\nModelos intrínsecamente interpretables\n\n\n\nJavier París\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "xAI PhD Sessions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar 1\n\n\nConceptos básicos sobre explicabilidad\n\n\n\nJavier París\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar 2\n\n\nModelos intrínsecamente interpretables\n\n\n\nJavier París\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "1.1 ¿Qué es la interpretabilidad?",
+    "text": "1.1 ¿Qué es la interpretabilidad?\nEs un grado, no una propiedad binaria.\n\nEl nivel con el que un humano puede entender las causas de una decisión.\nEl nivel con el que un humano puede predecir el resultado de un modelo."
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#qué-es-la-explicación",
+    "href": "sessions/basic_concepts.html#qué-es-la-explicación",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "1.2 ¿Qué es la explicación?",
+    "text": "1.2 ¿Qué es la explicación?\nEs una respuesta a una pregunta del tipo:\n\n“why” question\n“what if” question"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
+    "href": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "1.3 Importancia (por qué no confiar en un modelo)",
+    "text": "1.3 Importancia (por qué no confiar en un modelo)\n\nSeguridad: poder confiar en aplicaciones críticas\nSesgos: detectar y corregir sesgos\nConocimiento: el objetivo de la ciencia es el entendimiento\nAceptación: para ser humana/socialmente aceptable"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "1.4 Objetivo de la interpretabilidad",
+    "text": "1.4 Objetivo de la interpretabilidad\n\nEquidad - Fairness\nPrivacidad - Privacy\nFiablididad - Reliability\nCausalidad - Causality\nConfianza - Trust"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
+    "href": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "1.5 Diferencia entre modelo y método",
+    "text": "1.5 Diferencia entre modelo y método\n\n\nModelo\nAlgoritmo que ajusta una función a los datos de entrenamiento.\n\nKNN\nSVM\nANN\n\n\nMétodo\nAlgoritmo para obtener explicaciones de modelos ya entrenados.\n\nLIME\nSHAP\nCounterfactuals"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-modelo",
+    "href": "sessions/basic_concepts.html#según-el-modelo",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "2.1 Según el modelo",
+    "text": "2.1 Según el modelo\n\nModelos intrínsecamente interpretables: modelos que son interpretables por sí mismos.\n\nModelos lineales\nModelos basados en reglas\n\nPost-hoc métodos sobre modelos ya entrenados\n\nLIME\nSHAP"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
+    "href": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "2.2 Resultados de los métodos de interpretación",
+    "text": "2.2 Resultados de los métodos de interpretación\n\nResumen estadístico de atributos\nResumen visual de atributos\nExplicaciones internas del modelo\nExplicación mediante datos individuales\nAproximación mediante modelos interpretables"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-método",
+    "href": "sessions/basic_concepts.html#según-el-método",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "2.3 Según el método",
+    "text": "2.3 Según el método\n\nMétodos agnósticos de modelo: LIME\nMétodos específicos: ANN"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
+    "href": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "2.4 Según el rango de interpretación",
+    "text": "2.4 Según el rango de interpretación\n\nLocal: interpretación de una predicción (un dato)\nGlobal: interpretación del modelo completo"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
+    "href": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "2.5 Rango de la interpretabilidad",
+    "text": "2.5 Rango de la interpretabilidad\n\nTransparencia: ¿Cómo el algoritmo crea el modelo?\nGlobal:\n\nHolístico: ¿Cómo se lleva a cabo la inferencia?\nModular: ¿Qué parte del modelo afecta a qué en la inferencia?\n\nLocal:\n\nIndividual: ¿Por qué un modelo predice una salida concreta para una entrada?\nGrupal ¿Por qué un modelo predice una salida similar para un grupo de entradas?"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#propiedades-de-los-métodos",
+    "href": "sessions/basic_concepts.html#propiedades-de-los-métodos",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "3.1 Propiedades de los métodos",
+    "text": "3.1 Propiedades de los métodos\n\nExpresividad: estructura de la explicación\nTransparencia: cuánto necesita saber la explicación del interior del modelo\nPortabilidad: rango de modelos a los que se puede aplicar\nComplejidad: computacional"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
+    "href": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "3.2 Propiedades de las explicaciones individuales",
+    "text": "3.2 Propiedades de las explicaciones individuales\n\nPrecisión: cómo de bien la explicación predice datos desconocidos\nFidelidad: cómo de bien la explicación aproxima la predicción del modelo\nConsistencia: si la explicación difiere entre modelos similares\nEstabilidad: si la explicación cambia poco al cambiar la entrada\nComprensibilidad: si la explicación es fácil de entender\nCerteza: si la explicación es recoge la incertidumbre del modelo\nImportancia: si la explicación recoge la importancia de los atributos\nNovedad: si el método es capaz de explicar datos alejados del conjunto de entrenamiento\nRepresentatividad: cuántos datos cubre una explicación"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#puntos-de-análisis",
+    "href": "sessions/basic_concepts.html#puntos-de-análisis",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "4.1 Puntos de análisis",
+    "text": "4.1 Puntos de análisis\n\nEntrenamiento\n\nMemoria\nProceso algorítmico - optimización\nAprendizaje gradual del modelo\n\nInferencia\n\nProceso algorítmico - toma de decisiones\nModelo aprendido - pesos, frontera, etc."
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#medidas-subjetivas",
+    "href": "sessions/basic_concepts.html#medidas-subjetivas",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "4.2 Medidas subjetivas",
+    "text": "4.2 Medidas subjetivas\n\nTransparencia:\n\nModularidad: diferenciación de partes del modelo\nSimulabilidad: capacidad de un humano para simularlo\n\nParsimonia:\n\nParámetros: número de parámetros\nEstructura: modelo estructural"
+  },
+  {
+    "objectID": "sessions/basic_concepts.html#medidas-objetivas",
+    "href": "sessions/basic_concepts.html#medidas-objetivas",
+    "title": "Revisión del libro de Molnar 1",
+    "section": "4.3 Medidas objetivas",
+    "text": "4.3 Medidas objetivas\n\nAlgorítmicas:\n\nComplejidad algorítmica: tiempo y espacio \\(O(f(n))\\)\nComplejidad ciclomática: número de caminos independientes\nNúmero de decisiones: reducción del problema a un sistema basado en reglas\n\nLocales:\n\nFidelidad: si la explicación se ajusta al modelo (es capaz de explicar datos contrafácticos)\nConsistencia: si la explicación difiere entre modelos similares\nMonotoneidad: si la explicación cambia de forma monótona con los datos\n\nGlobales:\n\nImportancia de atributos: medir la importancia de cada atributo, o de relaciones entre ellos\n\n\n\n\n\n\nPhD xAI"
   },
   {
     "objectID": "sessions/inherited_explainable_models.html#section",
@@ -166,110 +271,5 @@
     "title": "Revisión del libro de Molnar 2",
     "section": "6.2 KNN",
     "text": "6.2 KNN\nAl ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.\nEl modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos.\n\n\n\n\nPhD xAI"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
-    "href": "sessions/basic_concepts.html#qué-es-la-interpretabilidad",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "1.1 ¿Qué es la interpretabilidad?",
-    "text": "1.1 ¿Qué es la interpretabilidad?\nEs un grado, no una propiedad binaria.\n\nEl nivel con el que un humano puede entender las causas de una decisión.\nEl nivel con el que un humano puede predecir el resultado de un modelo."
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#qué-es-la-explicación",
-    "href": "sessions/basic_concepts.html#qué-es-la-explicación",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "1.2 ¿Qué es la explicación?",
-    "text": "1.2 ¿Qué es la explicación?\nEs una respuesta a una pregunta del tipo:\n\n“why” question\n“what if” question"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
-    "href": "sessions/basic_concepts.html#importancia-por-qué-no-confiar-en-un-modelo",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "1.3 Importancia (por qué no confiar en un modelo)",
-    "text": "1.3 Importancia (por qué no confiar en un modelo)\n\nSeguridad: poder confiar en aplicaciones críticas\nSesgos: detectar y corregir sesgos\nConocimiento: el objetivo de la ciencia es el entendimiento\nAceptación: para ser humana/socialmente aceptable"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
-    "href": "sessions/basic_concepts.html#objetivo-de-la-interpretabilidad",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "1.4 Objetivo de la interpretabilidad",
-    "text": "1.4 Objetivo de la interpretabilidad\n\nEquidad - Fairness\nPrivacidad - Privacy\nFiablididad - Reliability\nCausalidad - Causality\nConfianza - Trust"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
-    "href": "sessions/basic_concepts.html#diferencia-entre-modelo-y-método",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "1.5 Diferencia entre modelo y método",
-    "text": "1.5 Diferencia entre modelo y método\n\n\nModelo\nAlgoritmo que ajusta una función a los datos de entrenamiento.\n\nKNN\nSVM\nANN\n\n\nMétodo\nAlgoritmo para obtener explicaciones de modelos ya entrenados.\n\nLIME\nSHAP\nCounterfactuals"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#según-el-modelo",
-    "href": "sessions/basic_concepts.html#según-el-modelo",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "2.1 Según el modelo",
-    "text": "2.1 Según el modelo\n\nModelos intrínsecamente interpretables: modelos que son interpretables por sí mismos.\n\nModelos lineales\nModelos basados en reglas\n\nPost-hoc métodos sobre modelos ya entrenados\n\nLIME\nSHAP"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
-    "href": "sessions/basic_concepts.html#resultados-de-los-métodos-de-interpretación",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "2.2 Resultados de los métodos de interpretación",
-    "text": "2.2 Resultados de los métodos de interpretación\n\nResumen estadístico de atributos\nResumen visual de atributos\nExplicaciones internas del modelo\nExplicación mediante datos individuales\nAproximación mediante modelos interpretables"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#según-el-método",
-    "href": "sessions/basic_concepts.html#según-el-método",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "2.3 Según el método",
-    "text": "2.3 Según el método\n\nMétodos agnósticos de modelo: LIME\nMétodos específicos: ANN"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
-    "href": "sessions/basic_concepts.html#según-el-rango-de-interpretación",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "2.4 Según el rango de interpretación",
-    "text": "2.4 Según el rango de interpretación\n\nLocal: interpretación de una predicción (un dato)\nGlobal: interpretación del modelo completo"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
-    "href": "sessions/basic_concepts.html#rango-de-la-interpretabilidad",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "2.5 Rango de la interpretabilidad",
-    "text": "2.5 Rango de la interpretabilidad\n\nTransparencia: ¿Cómo el algoritmo crea el modelo?\nGlobal:\n\nHolístico: ¿Cómo se lleva a cabo la inferencia?\nModular: ¿Qué parte del modelo afecta a qué en la inferencia?\n\nLocal:\n\nIndividual: ¿Por qué un modelo predice una salida concreta para una entrada?\nGrupal ¿Por qué un modelo predice una salida similar para un grupo de entradas?"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#propiedades-de-los-métodos",
-    "href": "sessions/basic_concepts.html#propiedades-de-los-métodos",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "3.1 Propiedades de los métodos",
-    "text": "3.1 Propiedades de los métodos\n\nExpresividad: estructura de la explicación\nTransparencia: cuánto necesita saber la explicación del interior del modelo\nPortabilidad: rango de modelos a los que se puede aplicar\nComplejidad: computacional"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
-    "href": "sessions/basic_concepts.html#propiedades-de-las-explicaciones-individuales",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "3.2 Propiedades de las explicaciones individuales",
-    "text": "3.2 Propiedades de las explicaciones individuales\n\nPrecisión: cómo de bien la explicación predice datos desconocidos\nFidelidad: cómo de bien la explicación aproxima la predicción del modelo\nConsistencia: si la explicación difiere entre modelos similares\nEstabilidad: si la explicación cambia poco al cambiar la entrada\nComprensibilidad: si la explicación es fácil de entender\nCerteza: si la explicación es recoge la incertidumbre del modelo\nImportancia: si la explicación recoge la importancia de los atributos\nNovedad: si el método es capaz de explicar datos alejados del conjunto de entrenamiento\nRepresentatividad: cuántos datos cubre una explicación"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#puntos-de-análisis",
-    "href": "sessions/basic_concepts.html#puntos-de-análisis",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "4.1 Puntos de análisis",
-    "text": "4.1 Puntos de análisis\n\nEntrenamiento\n\nMemoria\nProceso algorítmico - optimización\nAprendizaje gradual del modelo\n\nInferencia\n\nProceso algorítmico - toma de decisiones\nModelo aprendido - pesos, frontera, etc."
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#medidas-subjetivas",
-    "href": "sessions/basic_concepts.html#medidas-subjetivas",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "4.2 Medidas subjetivas",
-    "text": "4.2 Medidas subjetivas\n\nTransparencia:\n\nModularidad: diferenciación de partes del modelo\nSimulabilidad: capacidad de un humano para simularlo\n\nParsimonia:\n\nParámetros: número de parámetros\nEstructura: modelo estructural"
-  },
-  {
-    "objectID": "sessions/basic_concepts.html#medidas-objetivas",
-    "href": "sessions/basic_concepts.html#medidas-objetivas",
-    "title": "Revisión del libro de Molnar 1",
-    "section": "4.3 Medidas objetivas",
-    "text": "4.3 Medidas objetivas\n\nAlgorítmicas:\n\nComplejidad algorítmica: tiempo y espacio \\(O(f(n))\\)\nComplejidad ciclomática: número de caminos independientes\nNúmero de decisiones: reducción del problema a un sistema basado en reglas\n\nLocales:\n\nFidelidad: si la explicación se ajusta al modelo (es capaz de explicar datos contrafácticos)\nConsistencia: si la explicación difiere entre modelos similares\nMonotoneidad: si la explicación cambia de forma monótona con los datos\n\nGlobales:\n\nImportancia de atributos: medir la importancia de cada atributo, o de relaciones entre ellos\n\n\n\n\n\n\nPhD xAI"
   }
 ]
