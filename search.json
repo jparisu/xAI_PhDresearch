@@ -105,6 +105,13 @@
     "text": "4.3 Medidas objetivas\n\nAlgorítmicas:\n\nComplejidad algorítmica: tiempo y espacio \\(O(f(n))\\)\nComplejidad ciclomática: número de caminos independientes\nNúmero de decisiones: reducción del problema a un sistema basado en reglas\n\nLocales:\n\nFidelidad: si la explicación se ajusta al modelo (es capaz de explicar datos contrafácticos)\nConsistencia: si la explicación difiere entre modelos similares\nMonotoneidad: si la explicación cambia de forma monótona con los datos\n\nGlobales:\n\nImportancia de atributos: medir la importancia de cada atributo, o de relaciones entre ellos\n\n\n\n\n\n\nPhD xAI"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "xAI PhD Sessions\n\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar\n\n\n\n\n\n\nJavier París\n\n\n\n\n\n\n\n\n\n\n\n\nRevisión del libro de Molnar\n\n\n\n\n\n\nJavier París\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "sessions/inherited_explainable_models.html#section",
     "href": "sessions/inherited_explainable_models.html#section",
     "title": "Revisión del libro de Molnar",
