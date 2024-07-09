@@ -1,0 +1,9 @@
+# WHOLE PROJECT CONFIGURATION
+project:
+  title: "XAI_sessions"
+  output-dir: "_build"
+  type: website
+
+# To avoid execute code in Github actions
+execute:
+  freeze: auto

@@ -1,30 +1,6 @@
 ---
-title: "PhD xAI"
-subtitle: "Sesión 2: Modelos intrínsecamente interpretables (Molnar)"
-author: "Javier París"
-logo: ../templates/images/uam.png
-
-toc: true
-toc-depth: 1
-
-theme: serif
-
-format:
-    revealjs:
-
-        progress: true
-        slide-number: true
-        transition: slide
-
-        navigation-mode: vertical
-        controls-layout: bottom-right
-        controls-tutorial: true
-        controls: true
-        touch: true
-
-        footer: "."
-        css: ../templates/style/style.css
-        include-after-body: ../templates/code/custom_footer.html
+title: "Revisión del libro de Molnar 2"
+subtitle: "Modelos intrínsecamente interpretables"
 ---
 
 
@@ -32,7 +8,7 @@ format:
 
 ## { .exclude-from-toc }
 
-![](images/1024px-Linear_regression.svg.png)
+![](../media/images/1024px-Linear_regression.svg.png)
 
 
 ## Interpretación de los coeficientes en atributos numéricos
@@ -90,7 +66,7 @@ Para eso se pueden usar ténicas de regularización como **LASSO**.
 
 ## { .exclude-from-toc }
 
-![](images/641820301461c614b1603f38_4-NumericFeatures.png)
+![](../media/images/641820301461c614b1603f38_4-NumericFeatures.png)
 
 ## GLM (Generalized Linear Models)
 
@@ -144,7 +120,7 @@ Normalmente se usan *splines* para ajustar funciones no lineales a los atributos
 
 ## { .exclude-from-toc }
 
-![](images/tree-artificial-1.jpeg)
+![](../media/images/tree-artificial-1.jpeg)
 
 ## Interpretación de los nodos
 
@@ -180,7 +156,7 @@ Los árboles de decisión se interpretan por la decisión en cada nodo, y la imp
 
 ## { .exclude-from-toc }
 
-![](images/Rule-Generation.png)
+![](../media/images/Rule-Generation.png)
 
 ## Reglas de decisión
 
@@ -224,7 +200,7 @@ Cada reglar se puede medir principalmente con 2 valores, que suelen ser inversam
 
 ## { .exclude-from-toc }
 
-![](images/rulefit.jpg)
+![](../media/images/rulefit.jpg)
 
 
 ## Implementación

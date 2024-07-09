@@ -1,0 +1,54 @@
+
+# COMMON CONFIGURATIONS
+author: "Javier París"
+logo: ../templates/images/uam.png
+footer: "PhD xAI"
+
+
+# RENDER CONFIGURATIONS
+format:
+
+  # REVEAL.JS CONFIGURATION
+  revealjs:
+
+    # Table of contents configuration
+    toc: false
+    toc-depth: 1
+
+    # Slide configuration
+    progress: true
+    slide-number: c/t
+    transition: slide
+    scrollable: false
+    height: 900
+    width: 1600
+    slide-level: 2
+    from: markdown+emoji
+    center-title-slide: true
+    number-sections: true
+    overflow: true
+    autoSlideResize: true
+
+    # Navigation
+    # horizontal to make it linear
+    navigation-mode: vertical
+    controls: true
+    controls-layout: bottom-right
+    # controls-tutorial: true
+    touch: true
+
+    # Style configuration
+    # The footer will be automatically changed
+    css: ../templates/style/style.css
+    incremental: false
+    theme: ../templates/style/custom_theme.scss
+    include-after-body: ../templates/code/code.html
+
+################################################################################
+  # PDF CONFIGURATION
+  # pdf:
+
+  #   # Table of contents configuration
+  #   toc: true
+  #   toc-depth: 2
+  #   number-sections: true

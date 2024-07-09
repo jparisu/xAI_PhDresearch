@@ -1,46 +1,136 @@
 
-.reveal .slides .novel-slide-title {
-    font-size: 1.9em;  /* Adjust as needed for larger font */
-    background-color: #a6ffa6;  /* Example background color */
-    color: #cccccc;  /* Example text color */
-    /* Add more styling as needed */
+/* TODO: learn how to make text resize when changing zoom */
+/* body {
+    font-size: calc(1rem + 1vw);
+} */
+.reveal {
+    font-size: calc(3rem - 1vw);
+}
+
+/* Every slide specific style */
+section.level2{
+    /* This is for being able to scroll higher and avoid the ToC*/
+    box-sizing: border-box;
+    padding-bottom: 8%;
+    overflow: auto;
+}
+
+.reveal .smaller {
+    font-size: 0.8em;
+}
+
+/* Title slide specific style */
+.reveal #title-slide {
+    font-size: 2em;  /* Adjust as needed for larger font */
     text-align: center;  /* Centered text for title slides */
 }
 
-.reveal .slides > section {
-    overflow-y: auto;
-    font-size: 20pt;
-    font-family: 'Georgia', serif;
-}
-
-/* Title slide specific styles */
-.reveal .slides > section:first-of-type {
-    font-size: 1.5em;  /* Adjust as needed for larger font */
-}
-
-/* Title slide specific styles */
+/* Chapter title slide specific style */
 .reveal .title-slide {
-    font-size: 1.9em;  /* Adjust as needed for larger font */
-    background-color: #b7b7b7;  /* Example background color */
-    color: #482300;  /* Example text color */
-    /* Add more styling as needed */
-    text-align: center;  /* Centered text for title slides */
+    font-size: 1.9em;
+    text-align: center;
 }
 
-.bottom-paragraph {
+/* Title slide background */
+.reveal .slide-background.quarto-title-block {
+    background-image: url("../images/background.png");
+    opacity: 0.4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Non-Chapter title slide background */
+.reveal .slide-background.level2 {
+    background-image: url("../images/background.png");
+    opacity: 0.3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Chapter title slide background */
+.reveal .slide-background.level1 {
+    background-image: url("../images/background.png");
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Common slide specific style */
+.reveal .slide.level2 {
+    font-size: 1em;
+}
+
+.reveal .footer {
+    font-weight: bold;
+    bottom: 1% !important;
+}
+
+.reveal .slide-logo {
+    max-height: 2.9rem !important;
+    /* width: 200% !important; */
+    margin-right: 0.5%;
+    margin-bottom: 2.1%;
+}
+
+.reveal .novel, .reveal .novel h1, .reveal .novel h2 {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #737056;
+}
+
+/* TODO: learn how to do TOC scrollable */
+/* .reveal #TOC {
+    box-sizing: border-box;
+    padding-bottom: 8%;
+    overflow: auto;
+} */
+
+/******************************************************************
+ * Dynamic ToC
+ ******************************************************************/
+
+.dynamic-toc {
+    background-color: #7c7c7c;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center; /* Equally space the titles */
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    z-index: 2;
+}
+
+#dynamic-toc {
     position: absolute;
-    bottom: 50px; /* Adjust as needed */
-    width: 100%;
-    color: #444;
+    bottom: 6%;
+    left: 5%;
+    width: 85%;
+    height: 9%;
+    overflow-y: auto;
+    background-color: #7c7c7c;
+    opacity: 70%;
 }
 
-.reveal .slides img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.toc-main-title {
+    flex: 1;
+    text-align: center;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.45em; /* Adjust font size as needed */
+    color: white;
 }
 
-.novel-slide {
-    background-color: #a4ff92;  /* Example background color */
-    color: #000000;  /* Example text color */
+.toc-main-title.highlight {
+    font-size: 0.55em; /* Adjust font size as needed */
+    color: white;
+    font-weight: bold;
 }

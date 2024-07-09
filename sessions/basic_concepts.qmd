@@ -1,30 +1,6 @@
 ---
-title: "PhD xAI"
-subtitle: "Sesión 1: Conceptos básicos sobre explicabilidad (Molnar)"
-author: "Javier París"
-logo: ../templates/images/uam.png
-
-toc: true
-toc-depth: 2
-
-theme: serif
-
-format:
-    revealjs:
-
-        progress: true
-        slide-number: true
-        transition: slide
-
-        navigation-mode: vertical
-        controls-layout: bottom-right
-        controls-tutorial: true
-        controls: true
-        touch: true
-
-        footer: "."
-        css: ../templates/style/style.css
-        include-after-body: ../templates/code/custom_footer.html
+title: "Revisión del libro de Molnar 1"
+subtitle: "Conceptos básicos sobre explicabilidad"
 ---
 
 # Interpretabilidad
@@ -151,9 +127,9 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
 - **Representatividad**: cuántos datos cubre una explicación
 
 
-# Medida de la interpretabilidad {.novel-slide-title}
+# Medida de la interpretabilidad {.novel}
 
-## Puntos de análisis {.novel-slide}
+## Puntos de análisis {.novel}
 
 - Entrenamiento
   - Memoria
@@ -163,7 +139,7 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
   - Proceso algorítmico - toma de decisiones
   - Modelo aprendido - pesos, frontera, etc.
 
-## Medidas subjetivas {.novel-slide}
+## Medidas subjetivas {.novel}
 
 - **Transparencia**:
   - **Modularidad**: diferenciación de partes del modelo
@@ -172,7 +148,7 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
   - **Parámetros**: número de parámetros
   - **Estructura**: modelo estructural
 
-## Medidas objetivas {.novel-slide}
+## Medidas objetivas {.novel .smaller}
 
 - **Algorítmicas**:
   - **Complejidad algorítmica**: tiempo y espacio $O(f(n))$

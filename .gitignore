@@ -1,4 +1,6 @@
-# Quarto rendering remaining files
+# Quarto files
+/.quarto/
+
 # Folders finished in _files
 *_files/
 

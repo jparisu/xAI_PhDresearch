@@ -1,0 +1,10 @@
+---
+title: "Index"
+listing:
+  contents: ["sessions/*.qmd"]
+  type: grid
+  fields: [image, title, subtitle, author]
+  image-placeholder: templates/images/placeholder.png
+---
+
+# xAI PhD Sessions
