@@ -254,3 +254,99 @@ Es fácilmente interpretable la importancia de cada atributo $P(x|C_k)$.
 Al ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.
 
 El modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos.
+
+
+# Conclusiones {.inh_novel}
+
+## Comparación de modelos
+
+| Modelo | Datos Lineales | Datos NO Lineales | Relación Entre Atributos | Interpretación Intrínseca | Interpretación Global | Interpretación Local | Atributos Numericos | Atributos Categoricos | Consistente | Estable |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Regresión Lineal | :ballot_box_with_check: | :x: | :x: | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | ~ | :ballot_box_with_check: | :ballot_box_with_check: |
+| GLM - GAM | :ballot_box_with_check: | :ballot_box_with_check: | ~ | :x: | :x: | ~ | :ballot_box_with_check: | ~ | ~ | ~ |
+| Árboles | :x: | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | ~ | :ballot_box_with_check: | ~ | :ballot_box_with_check: | :x: | :x: |
+| Reglas | :x: | :ballot_box_with_check: | :ballot_box_with_check: | ~ | ~ | :ballot_box_with_check: | :x: | :ballot_box_with_check: | :ballot_box_with_check: | :x: |
+| RuleFit | ~ | :ballot_box_with_check: | :ballot_box_with_check: | ~ | :x: | :ballot_box_with_check: | :ballot_box_with_check: | :ballot_box_with_check: | ~ | :x: |
+
+: Comparación de modelos {.striped .hover .vrt-header}
+
+## Complejidad del Dataset
+
+- Dimensionalidad
+  - Número de atributos
+  - Correlaciones y dependencias
+  - **Análisis de importancia**
+- Linearidad
+  - LDA (Análisis Discriminante Lineal) (Discriminante lineal de Fisher)
+- Frontera
+  - **Vectores soporte**
+  - Longitud de la frontera
+  - Dimensión fractal
+- Overlapping
+  - Volumen de región de overlapping
+- Learning Theory
+  - **VC Dimension**: cardinalidad del mayor conjunto de puntos que un algoritmo puede separar
+  - Rademacher Complexity: mide la riqueza de una clase de conjuntos con respecto a una distribución de probabilidad
+- etc.
+
+## Complejidad del Modelo
+
+- Complejidad algorítmica [Inferencia]
+  - $O(f(n))$
+- Número de parámetros
+  - Modelo lineal: $=#atributos$
+    - LASSO: reducción
+  - ANN: $=#pesos$
+  - Árbol de decisión: $=#aristas$
+- Complejidad de la frontera
+  - **Parámetrización analítica**
+    - **Regiones lineales**
+    - curva parametrizada
+- etc.
+
+
+## Propuesta de medida
+
+Una posible propuesta de cómo medir la *interpretabilidad local* de un modelo de forma cuantitativa:
+
+::: {.highlight}
+Encontrar $N$ modelos puramente lineales que aproximen el modelo original en una región separada por reglas (similar a árboles de regresión pero basado en reglas y no en nodos).
+
+Medir cuántas reglas hacen falta para aproximar el modelo con un error $\lt \epsilon$
+:::
+
+Este método se podría usar tanto para calcular la **interpretabilidad (complejidad) de un dataset** *¿Cuántas reglas necesito para ajustar este dataset con $1-\epsilon$ de precisión*: **cálculo numérico**.
+
+como para medir la **interpretabilidad de un modelo** *¿Cuántas reglas necesito para ajustar este modelo con $1-\epsilon$ de precisión sobre la predicción*: **cálculo analítico**.
+
+
+## Ejemplo de complejidad del dataset
+
+![](../media/images/dataset_complexity.png){width=100%}
+
+## Ejemplo de complejidad del modelo
+
+![](../media/images/model_complexity.png){width=80%}
+
+## Propuesta formal
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Medida de la interpretabilidad de un dataset
+
+Tras ajustar un dataset con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:
+
+:::
+::: {.column width="50%"}
+
+### Medida de la interpretabilidad de un modelo
+
+Tras ajustar un modelo con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:
+
+:::
+:::
+
+:::{.highlight}
+Un dataset/modelo será más interpretable cuantas menos reglas necesite y/o menos atributos tenga cada modelo lineal.
+:::
