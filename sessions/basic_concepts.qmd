@@ -127,9 +127,9 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
 - **Representatividad**: cuántos datos cubre una explicación
 
 
-# Medida de la interpretabilidad {.novel}
+# Medida de la interpretabilidad {.inh_novel}
 
-## Puntos de análisis {.novel}
+## Puntos de análisis
 
 - Entrenamiento
   - Memoria
@@ -139,7 +139,7 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
   - Proceso algorítmico - toma de decisiones
   - Modelo aprendido - pesos, frontera, etc.
 
-## Medidas subjetivas {.novel}
+## Medidas subjetivas
 
 - **Transparencia**:
   - **Modularidad**: diferenciación de partes del modelo
@@ -148,7 +148,7 @@ Algoritmo para obtener explicaciones de modelos ya entrenados.
   - **Parámetros**: número de parámetros
   - **Estructura**: modelo estructural
 
-## Medidas objetivas {.novel .smaller}
+## Medidas objetivas {.smaller}
 
 - **Algorítmicas**:
   - **Complejidad algorítmica**: tiempo y espacio $O(f(n))$
