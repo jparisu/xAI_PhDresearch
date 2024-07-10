@@ -130,9 +130,9 @@ function updateDynamicToC () {
 
     document.querySelectorAll('.toc-div').forEach((titleElement) => {
         if (titleElement.textContent == current_chapter_title) {
-            titleElement.classList.add('highlight');
+            titleElement.classList.add('toc-highlight');
         } else {
-            titleElement.classList.remove('highlight');
+            titleElement.classList.remove('toc-highlight');
         }
     });
 }
@@ -146,6 +146,29 @@ function toggleToC() {
         } else {
             toc.style.display = 'none';
         }
+    });
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+function forceInheritedTags() {
+    document.querySelectorAll('.reveal section.stack').forEach((section) => {
+
+        // Get first section, as it is the title
+        const title = section.querySelector('section.title-slide');
+
+        // If there is no title, skip
+        if (!title) {
+            return;
+        }
+
+        // Find every class of title that starts with inh_
+        const inhClasses = title.className.split(' ').filter(c => c.startsWith('inh_'));
+
+        // If there are inh_ values, add them to every section forward
+        section.querySelectorAll('section').forEach((subSection) => {
+            inhClasses.forEach(c => subSection.classList.add(c));
+        });
     });
 }
 
@@ -167,6 +190,7 @@ Reveal.on('slidechanged', function(event) {
 document.addEventListener('DOMContentLoaded', (event) => {
     createTocDiv();
     populateMainToC();
+    forceInheritedTags();
 });
 
 // Reformat event "t" key pressed

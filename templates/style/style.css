@@ -78,7 +78,7 @@ section.level2{
     margin-bottom: 2.1%;
 }
 
-.reveal .novel, .reveal .novel h1, .reveal .novel h2 {
+.reveal .novel, .reveal .novel h1, .reveal .novel h2, .reveal .inh_novel, .reveal .inh_novel h1, .reveal .inh_novel h2 {
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
     color: #737056;
@@ -90,6 +90,17 @@ section.level2{
     padding-bottom: 8%;
     overflow: auto;
 } */
+
+.highlight {
+    background-color: rgb(212, 212, 161);
+    font-style: bold;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 4px solid white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /******************************************************************
  * Dynamic ToC
@@ -129,8 +140,23 @@ section.level2{
     color: white;
 }
 
-.toc-main-title.highlight {
+.toc-main-title.toc-highlight {
     font-size: 0.55em; /* Adjust font size as needed */
     color: white;
     font-weight: bold;
+}
+
+/******************************************************************
+ * Tables
+ ******************************************************************/
+
+.vrt-header th {
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+    transform: rotate(190deg); /* Adjust the degree as needed */
+    border: 2px solid black;
+}
+
+.vrt-header td {
+    border: 2px solid black;
 }
