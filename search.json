@@ -270,6 +270,55 @@
     "href": "sessions/inherited_explainable_models.html#knn",
     "title": "Revisión del libro de Molnar 2",
     "section": "6.2 KNN",
-    "text": "6.2 KNN\nAl ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.\nEl modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos.\n\n\n\n\nPhD xAI"
+    "text": "6.2 KNN\nAl ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.\nEl modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#comparación-de-modelos",
+    "href": "sessions/inherited_explainable_models.html#comparación-de-modelos",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.1 Comparación de modelos",
+    "text": "7.1 Comparación de modelos\n\nComparación de modelos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModelo\nDatos Lineales\nDatos NO Lineales\nRelación Entre Atributos\nInterpretación Intrínseca\nInterpretación Global\nInterpretación Local\nAtributos Numericos\nAtributos Categoricos\nConsistente\nEstable\n\n\n\n\nRegresión Lineal\n☑️\n❌\n❌\n☑️\n☑️\n☑️\n☑️\n~\n☑️\n☑️\n\n\nGLM - GAM\n☑️\n☑️\n~\n❌\n❌\n~\n☑️\n~\n~\n~\n\n\nÁrboles\n❌\n☑️\n☑️\n☑️\n~\n☑️\n~\n☑️\n❌\n❌\n\n\nReglas\n❌\n☑️\n☑️\n~\n~\n☑️\n❌\n☑️\n☑️\n❌\n\n\nRuleFit\n~\n☑️\n☑️\n~\n❌\n☑️\n☑️\n☑️\n~\n❌"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#complejidad-del-dataset",
+    "href": "sessions/inherited_explainable_models.html#complejidad-del-dataset",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.2 Complejidad del Dataset",
+    "text": "7.2 Complejidad del Dataset\n\nDimensionalidad\n\nNúmero de atributos\nCorrelaciones y dependencias\nAnálisis de importancia\n\nLinearidad\n\nLDA (Análisis Discriminante Lineal) (Discriminante lineal de Fisher)\n\nFrontera\n\nVectores soporte\nLongitud de la frontera\nDimensión fractal\n\nOverlapping\n\nVolumen de región de overlapping\n\nLearning Theory\n\nVC Dimension: cardinalidad del mayor conjunto de puntos que un algoritmo puede separar\nRademacher Complexity: mide la riqueza de una clase de conjuntos con respecto a una distribución de probabilidad\n\netc."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#complejidad-del-modelo",
+    "href": "sessions/inherited_explainable_models.html#complejidad-del-modelo",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.3 Complejidad del Modelo",
+    "text": "7.3 Complejidad del Modelo\n\nComplejidad algorítmica [Inferencia]\n\n\\(O(f(n))\\)\n\nNúmero de parámetros\n\nModelo lineal: \\(=#atributos\\)\n\nLASSO: reducción\n\nANN: \\(=#pesos\\)\nÁrbol de decisión: \\(=#aristas\\)\n\nComplejidad de la frontera\n\nParámetrización analítica\n\nRegiones lineales\ncurva parametrizada\n\n\netc."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#propuesta-de-medida",
+    "href": "sessions/inherited_explainable_models.html#propuesta-de-medida",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.4 Propuesta de medida",
+    "text": "7.4 Propuesta de medida\nUna posible propuesta de cómo medir la interpretabilidad local de un modelo de forma cuantitativa:\n\nEncontrar \\(N\\) modelos puramente lineales que aproximen el modelo original en una región separada por reglas (similar a árboles de regresión pero basado en reglas y no en nodos).\nMedir cuántas reglas hacen falta para aproximar el modelo con un error \\(\\lt \\epsilon\\)\n\nEste método se podría usar tanto para calcular la interpretabilidad (complejidad) de un dataset ¿Cuántas reglas necesito para ajustar este dataset con \\(1-\\epsilon\\) de precisión: cálculo numérico.\ncomo para medir la interpretabilidad de un modelo ¿Cuántas reglas necesito para ajustar este modelo con \\(1-\\epsilon\\) de precisión sobre la predicción: cálculo analítico."
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#ejemplo-de-complejidad-del-dataset",
+    "href": "sessions/inherited_explainable_models.html#ejemplo-de-complejidad-del-dataset",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.5 Ejemplo de complejidad del dataset",
+    "text": "7.5 Ejemplo de complejidad del dataset"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#ejemplo-de-complejidad-del-modelo",
+    "href": "sessions/inherited_explainable_models.html#ejemplo-de-complejidad-del-modelo",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.6 Ejemplo de complejidad del modelo",
+    "text": "7.6 Ejemplo de complejidad del modelo"
+  },
+  {
+    "objectID": "sessions/inherited_explainable_models.html#propuesta-formal",
+    "href": "sessions/inherited_explainable_models.html#propuesta-formal",
+    "title": "Revisión del libro de Molnar 2",
+    "section": "7.7 Propuesta formal",
+    "text": "7.7 Propuesta formal\n\n\n7.7.1 Medida de la interpretabilidad de un dataset\nTras ajustar un dataset con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:\n\n7.7.2 Medida de la interpretabilidad de un modelo\nTras ajustar un modelo con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:\n\n\nUn dataset/modelo será más interpretable cuantas menos reglas necesite y/o menos atributos tenga cada modelo lineal.\n\n\n\n\n\nPhD xAI"
   }
 ]

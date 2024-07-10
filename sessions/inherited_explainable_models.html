@@ -581,6 +581,202 @@ El caso de la regresión logística es un caso particular de GLM donde <span cla
 <h2><span class="header-section-number">6.2</span> KNN</h2>
 <p>Al ser un modelo basado en instancias (datos) no puede tener ciertas interpretaciones, como global o modular.</p>
 <p>El modelo es interpretable en tanto en cuanto sus atributos (una instancia concreta) son interpretables. Es decir, su interpretabilidad se reduce con el número de atributos.</p>
+</section></section>
+<section>
+<section id="conclusiones-1" class="title-slide slide level1 inh_novel center" data-number="7">
+<h1><span class="header-section-number">7</span> Conclusiones</h1>
+
+</section>
+<section id="comparación-de-modelos" class="slide level2" data-number="7.1">
+<h2><span class="header-section-number">7.1</span> Comparación de modelos</h2>
+<table class="table-striped table-hover vrt-header caption-top">
+<caption>Comparación de modelos</caption>
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modelo</th>
+<th>Datos Lineales</th>
+<th>Datos NO Lineales</th>
+<th>Relación Entre Atributos</th>
+<th>Interpretación Intrínseca</th>
+<th>Interpretación Global</th>
+<th>Interpretación Local</th>
+<th>Atributos Numericos</th>
+<th>Atributos Categoricos</th>
+<th>Consistente</th>
+<th>Estable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regresión Lineal</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+</tr>
+<tr class="even">
+<td>GLM - GAM</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr class="odd">
+<td>Árboles</td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+</tr>
+<tr class="even">
+<td>Reglas</td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+</tr>
+<tr class="odd">
+<td>RuleFit</td>
+<td>~</td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td><span class="emoji" data-emoji="ballot_box_with_check">☑️</span></td>
+<td>~</td>
+<td><span class="emoji" data-emoji="x">❌</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="complejidad-del-dataset" class="slide level2" data-number="7.2">
+<h2><span class="header-section-number">7.2</span> Complejidad del Dataset</h2>
+<ul>
+<li>Dimensionalidad
+<ul>
+<li>Número de atributos</li>
+<li>Correlaciones y dependencias</li>
+<li><strong>Análisis de importancia</strong></li>
+</ul></li>
+<li>Linearidad
+<ul>
+<li>LDA (Análisis Discriminante Lineal) (Discriminante lineal de Fisher)</li>
+</ul></li>
+<li>Frontera
+<ul>
+<li><strong>Vectores soporte</strong></li>
+<li>Longitud de la frontera</li>
+<li>Dimensión fractal</li>
+</ul></li>
+<li>Overlapping
+<ul>
+<li>Volumen de región de overlapping</li>
+</ul></li>
+<li>Learning Theory
+<ul>
+<li><strong>VC Dimension</strong>: cardinalidad del mayor conjunto de puntos que un algoritmo puede separar</li>
+<li>Rademacher Complexity: mide la riqueza de una clase de conjuntos con respecto a una distribución de probabilidad</li>
+</ul></li>
+<li>etc.</li>
+</ul>
+</section>
+<section id="complejidad-del-modelo" class="slide level2" data-number="7.3">
+<h2><span class="header-section-number">7.3</span> Complejidad del Modelo</h2>
+<ul>
+<li>Complejidad algorítmica [Inferencia]
+<ul>
+<li><span class="math inline">\(O(f(n))\)</span></li>
+</ul></li>
+<li>Número de parámetros
+<ul>
+<li>Modelo lineal: <span class="math inline">\(=#atributos\)</span>
+<ul>
+<li>LASSO: reducción</li>
+</ul></li>
+<li>ANN: <span class="math inline">\(=#pesos\)</span></li>
+<li>Árbol de decisión: <span class="math inline">\(=#aristas\)</span></li>
+</ul></li>
+<li>Complejidad de la frontera
+<ul>
+<li><strong>Parámetrización analítica</strong>
+<ul>
+<li><strong>Regiones lineales</strong></li>
+<li>curva parametrizada</li>
+</ul></li>
+</ul></li>
+<li>etc.</li>
+</ul>
+</section>
+<section id="propuesta-de-medida" class="slide level2" data-number="7.4">
+<h2><span class="header-section-number">7.4</span> Propuesta de medida</h2>
+<p>Una posible propuesta de cómo medir la <em>interpretabilidad local</em> de un modelo de forma cuantitativa:</p>
+<div class="highlight">
+<p>Encontrar <span class="math inline">\(N\)</span> modelos puramente lineales que aproximen el modelo original en una región separada por reglas (similar a árboles de regresión pero basado en reglas y no en nodos).</p>
+<p>Medir cuántas reglas hacen falta para aproximar el modelo con un error <span class="math inline">\(\lt \epsilon\)</span></p>
+</div>
+<p>Este método se podría usar tanto para calcular la <strong>interpretabilidad (complejidad) de un dataset</strong> <em>¿Cuántas reglas necesito para ajustar este dataset con <span class="math inline">\(1-\epsilon\)</span> de precisión</em>: <strong>cálculo numérico</strong>.</p>
+<p>como para medir la <strong>interpretabilidad de un modelo</strong> <em>¿Cuántas reglas necesito para ajustar este modelo con <span class="math inline">\(1-\epsilon\)</span> de precisión sobre la predicción</em>: <strong>cálculo analítico</strong>.</p>
+</section>
+<section id="ejemplo-de-complejidad-del-dataset" class="slide level2" data-number="7.5">
+<h2><span class="header-section-number">7.5</span> Ejemplo de complejidad del dataset</h2>
+
+<img data-src="../media/images/dataset_complexity.png" style="width:100.0%" class="r-stretch"></section>
+<section id="ejemplo-de-complejidad-del-modelo" class="slide level2" data-number="7.6">
+<h2><span class="header-section-number">7.6</span> Ejemplo de complejidad del modelo</h2>
+
+<img data-src="../media/images/model_complexity.png" style="width:80.0%" class="r-stretch"></section>
+<section id="propuesta-formal" class="slide level2" data-number="7.7">
+<h2><span class="header-section-number">7.7</span> Propuesta formal</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 data-number="7.7.1" id="medida-de-la-interpretabilidad-de-un-dataset"><span class="header-section-number">7.7.1</span> Medida de la interpretabilidad de un dataset</h3>
+<p>Tras ajustar un dataset con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:</p>
+</div><div class="column" style="width:50%;">
+<h3 data-number="7.7.2" id="medida-de-la-interpretabilidad-de-un-modelo"><span class="header-section-number">7.7.2</span> Medida de la interpretabilidad de un modelo</h3>
+<p>Tras ajustar un modelo con reglas que separen el espacio y ajustar un modelo lineal continuo en cada región:</p>
+</div></div>
+<div class="highlight">
+<p>Un dataset/modelo será más interpretable cuantas menos reglas necesite y/o menos atributos tenga cada modelo lineal.</p>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../templates/images/uam.png" class="slide-logo"></p>
